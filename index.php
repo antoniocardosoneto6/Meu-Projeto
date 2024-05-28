@@ -131,3 +131,95 @@ $z=$x . $y . $b;
 echo"<br>";
 echo $z;
 ?>
+<?php
+$octeto = 172;
+$mascara = 248;
+$valor = $octeto & $mascara;
+echo ",br> Aplicando a operacao AND entre a mascara e o octeto com o valor $valor <br>";
+?>
+<?php
+$valor = 05;
+if ($valor == 15) { //testa se valor e igual a 15
+	echo"<br><br> valore 15";
+	
+}
+elseif ($valor >= 10){
+	echo "Valor e maior ou igual a 10";
+}
+else {
+	echo "Valor e menor que 10";
+}
+?>
+<?php
+echo "<br><br>";
+$v = "Fabio";
+$nome = $v . " dos Reis";
+echo $nome;
+?>
+<?php
+$valor = 10;
+if ($valor === "10") {
+	echo "Valor e string";
+}
+else {
+       echo "Valor nao e string";	
+
+}
+echo "<br><br>";
+echo "Agora, fazendo cast no valor atribuido a variavel: <br>";
+$valor = (string) 10;
+if ($valor === "10") {
+	echo "Valor e string";
+}
+else {
+	echo "Valor nao e string";
+}
+
+?>
+<?php
+$a = 10;
+$b = 20;
+echo ($a == 10) && ($b == 20);
+echo "<br>";
+if (($a == 10) && ($b == 20)){
+	echo "Ambos os valores estao corretos <br>";
+}
+
+if (($a == 20) && ($b == 20)){
+	echo "Um dos valore estao correto <br>";
+}
+if (($a == 10) && ($b == 10)){
+	echo "Um dos valore esta errado <br>";
+}
+
+?>
+<?php
+$a = 3+5 * 4;
+$b = (3+5) * 4;
+
+echo "Valor: $a";
+echo "<br>";
+echo "Valor: $b";
+?>
+
+<?php
+$a = 10;
+$b = 9;
+$c = 5;
+$result = ($a+$b+$c)/3;
+echo "<br> A media e: $result";
+
+?>
+<?php
+$a = 8;
+$b = 6;
+$c = 4;
+$resultado = ($a+$b+$c)/3;
+if ($resultado >= 7){
+	echo "<br>Aluno Aprovado $resultado";
+}
+else {
+	echo "<br>Aluno Reprovado $resultado";
+
+}
+?>
