@@ -223,3 +223,30 @@ else {
 
 }
 ?>
+<?php
+$nota1 = 0;
+$nota2 = 0;
+$nota3 = 0;
+$nota4 = 0;
+$resultado = ($nota1+$nota2+$nota3+$nota4)/4;
+if ($resultado >= 7 && $resultado != 10) {
+	echo "<br> PARABENS Aluno Aprovado! ";
+}
+elseif ($resultado == 0) {
+	echo "<br> ESTUDE MAIS, voce nao acertou nada!";
+}
+elseif ($resultado == 10) {
+	echo "<br> PARABENS! Aprovado com nota maxima!";
+}
+else 
+	echo '<br> O Aluno foi reprovado!';
+?>
+<?php
+$num = 15;
+if ($num > 20 ) {
+	echo "<br> O numero e maior que 20";
+}
+else  {
+	echo "<br> O numero e menor que 20";
+}
+?>
