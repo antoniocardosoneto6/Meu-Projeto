@@ -250,3 +250,18 @@ else  {
 	echo "<br> O numero e menor que 20";
 }
 ?>
+<?php
+$num = 30;
+if ($num > 20) {
+	echo "<br> O numero e maior que 20";
+}
+elseif ($num < 20) {
+	echo "<br> O numero e menor que 20";
+}
+elseif ($num == 20) {
+	echo "<br> O numero e igual a 20";
+}
+else { 
+	echo "<br> O numero e nulo";
+}
+?>
