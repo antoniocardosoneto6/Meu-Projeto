@@ -265,3 +265,68 @@ else {
 	echo "<br> O numero e nulo";
 }
 ?>
+<?php
+$num = 66;
+if ($num >= 16 && $num <= 65) {
+	echo "<br> Aluno pode fazer uso do medicamento";
+}
+elseif ($num <65) {
+	echo "<br> O uso do medicasmento sera com restricoes";
+}
+elseif ($num <=10) {
+	echo "<br> O uso do medicamento e proibido";
+}
+elseif ($num >= 11 && $num <= 15) {
+	echo "<br> O uso do medicamento monitorado";
+}
+
+?>
+<?php
+$a = 5;	//Inter
+$b = 3.14;	// Float
+$c = "hoje";	// string
+$d = true;	// Booleano
+$e = NULL;	// NULL
+
+// Conversao para string
+$a = (string) $a;
+$b = (string) $b;
+$c = (string) $c;
+$d = (string) $d;
+$e = (string) $e;
+
+//Mostrar ao usuario
+echo "<br>";
+var_dump ($a);echo"<br>";
+var_dump ($b);echo"<br>";
+var_dump ($c);echo"<br>";
+var_dump ($d);echo"<br>";
+var_dump ($e);echo"<br>";
+echo"<br>";
+
+
+?>
+<?php
+$a = array ("Volvo", "BMW", "Toyota"); //array indexado
+$b = array ("Peter">="30", "Joao" >= "40", "Carlos" >="50");
+// array associativo
+$a = (object) $a;
+$b = (object) $b;
+echo "<br>";
+
+var_dump ($a); echo "<br>";
+var_dump ($b); echo "<br>";
+?>
+<?php
+echo (pi());
+echo "<br>";
+echo (min(0, 20, 130, -10, -230)). "<br>";
+echo (max(0, 25, -230, 100, -530)). "<br>";
+echo (sqrt(64)) . "<br>";
+echo (sqrt(4)) . "<br>";
+echo (round(0.60)) . "<br>";
+echo (rand()) . "<br>";
+echo (rand(10, 50)) . "<br>";
+
+
+?>
